@@ -1,0 +1,481 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1
+vadder32bit
+Z1 Ib4RZ::LRj]Pa6=3BWPcCZ0
+Z2 V=WB=94i1X:KQTN3OgYCT=3
+Z3 dC:\Users\BarikBin_user\Desktop\mips
+Z4 w1519743158
+Z5 8C:/Users/BarikBin_user/Desktop/mips/adder32bit.v
+Z6 FC:/Users/BarikBin_user/Desktop/mips/adder32bit.v
+L0 1
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 !s100 O?ahC^9IEebg11BJFNgTf3
+Z10 !s108 1524571149.931000
+Z11 !s107 C:/Users/BarikBin_user/Desktop/mips/adder32bit.v|
+Z12 !s90 -reportprogress|300|-work|work|C:/Users/BarikBin_user/Desktop/mips/adder32bit.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vALU
+Z13 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z14 I=Q@YO_c8?d==hl2M`4X9L1
+Z15 VJA3YI<a7@79hfP^AX0U:m0
+S1
+R3
+Z16 w1523365932
+Z17 8C:/Users/BarikBin_user/Desktop/mips/ALU.sv
+Z18 FC:/Users/BarikBin_user/Desktop/mips/ALU.sv
+L0 1
+R7
+r1
+31
+Z19 o-work work -sv -O0
+Z20 n@a@l@u
+Z21 !s100 z2CUn_SFJ`e[[WahzHU@91
+Z22 !s105 ALU_sv_unit
+Z23 !s108 1524571350.841000
+Z24 !s107 C:/Users/BarikBin_user/Desktop/mips/ALU.sv|
+Z25 !s90 -reportprogress|300|-work|work|-sv|C:/Users/BarikBin_user/Desktop/mips/ALU.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vcondition_check
+Z26 IOQ8>6h_E^h<eX=a`l;oQU0
+Z27 VaB[XUKF=PeXkT[`f3_EI`2
+Z28 dC:\Users\sadrodin1376\Desktop\mips
+Z29 w1521744635
+Z30 8C:/Users/sadrodin1376/Desktop/mips/Condition_check.v
+Z31 FC:/Users/sadrodin1376/Desktop/mips/Condition_check.v
+L0 1
+R7
+r1
+31
+R8
+Z32 !s100 B4X4H[1Si4gg:ObQb^Hom3
+Z33 !s108 1521759971.925000
+Z34 !s107 C:/Users/sadrodin1376/Desktop/mips/Condition_check.v|
+Z35 !s90 -reportprogress|300|-work|work|C:/Users/sadrodin1376/Desktop/mips/Condition_check.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vCondition_check
+Z36 I3GklMz@5YgRD7<Xi6RokC0
+Z37 VaUlUSGXgz;;SESffk[_F73
+R3
+Z38 w1521764805
+Z39 8C:/Users/BarikBin_user/Desktop/mips/Condition_check.v
+Z40 FC:/Users/BarikBin_user/Desktop/mips/Condition_check.v
+L0 1
+R7
+r1
+31
+R8
+Z41 n@condition_check
+Z42 !s100 3Wz1RX^eBQh78Of?zV9bD0
+Z43 !s108 1524571145.766000
+Z44 !s107 C:/Users/BarikBin_user/Desktop/mips/Condition_check.v|
+Z45 !s90 -reportprogress|300|-work|work|C:/Users/BarikBin_user/Desktop/mips/Condition_check.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vCU
+Z46 Iac8z4>ziH0GdDKKT>_OL`1
+Z47 V`gcN^7hc2_zINcfmhgDh;1
+R3
+Z48 w1524579755
+Z49 8C:/Users/BarikBin_user/Desktop/mips/CU.v
+Z50 FC:/Users/BarikBin_user/Desktop/mips/CU.v
+L0 1
+R7
+r1
+31
+Z51 !s90 -reportprogress|300|-work|work|C:/Users/BarikBin_user/Desktop/mips/CU.v|
+R8
+n@c@u
+Z52 !s100 l3TX11hP@9d9`gZL:m<Aa3
+Z53 !s108 1524579783.323000
+Z54 !s107 C:/Users/BarikBin_user/Desktop/mips/CU.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vEXE_Stage
+Z55 I6h>GM;V9R;gi`Q0L?OkGA0
+Z56 VJi1EZ33gX>3Z8X`Mf<o8M3
+R3
+Z57 w1524159015
+Z58 8C:/Users/BarikBin_user/Desktop/mips/EXE_Stage.v
+Z59 FC:/Users/BarikBin_user/Desktop/mips/EXE_Stage.v
+L0 1
+R7
+r1
+31
+R8
+Z60 n@e@x@e_@stage
+Z61 !s100 7;?dnAGKEdM0id>i?@lR>1
+Z62 !s108 1524571146.248000
+Z63 !s107 C:/Users/BarikBin_user/Desktop/mips/EXE_Stage.v|
+Z64 !s90 -reportprogress|300|-work|work|C:/Users/BarikBin_user/Desktop/mips/EXE_Stage.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vEXE_Stage_reg
+Z65 I2gS5lLAcd8<L:SCLH<LJ<3
+Z66 VaElhBgIQMGzl?li7KnFPI2
+R3
+Z67 w1521759793
+Z68 8C:/Users/BarikBin_user/Desktop/mips/EXE_Stage_reg.v
+Z69 FC:/Users/BarikBin_user/Desktop/mips/EXE_Stage_reg.v
+L0 1
+R7
+r1
+31
+R8
+Z70 n@e@x@e_@stage_reg
+Z71 !s100 HY@>;8TY1ZOcXIzDzJimf2
+Z72 !s108 1524571146.447000
+Z73 !s107 C:/Users/BarikBin_user/Desktop/mips/EXE_Stage_reg.v|
+Z74 !s90 -reportprogress|300|-work|work|C:/Users/BarikBin_user/Desktop/mips/EXE_Stage_reg.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vForwardingUnit
+Z75 I=5V9mD]Af5BO;iTNK;;o11
+Z76 VS_cfI18SEQ:;:Hljk46M42
+R3
+Z77 w1525178217
+Z78 8C:/Users/BarikBin_user/Desktop/mips/ForwardingUnit.v
+Z79 FC:/Users/BarikBin_user/Desktop/mips/ForwardingUnit.v
+L0 1
+R7
+r1
+31
+Z80 !s90 -reportprogress|300|-work|work|C:/Users/BarikBin_user/Desktop/mips/ForwardingUnit.v|
+R8
+Z81 n@forwarding@unit
+Z82 !s100 En3d5D6cE4mdb1S>g<?fM3
+Z83 !s108 1525178227.597000
+Z84 !s107 C:/Users/BarikBin_user/Desktop/mips/ForwardingUnit.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vhazardDetector
+Z85 I3l;?>PTQ`i@f8=2_De<5Z3
+Z86 V]DC3MBoe5<Om]5gXB_iIX3
+R3
+Z87 w1525179644
+Z88 8C:/Users/BarikBin_user/Desktop/mips/hazardDetector.v
+Z89 FC:/Users/BarikBin_user/Desktop/mips/hazardDetector.v
+L0 1
+R7
+r1
+31
+Z90 !s90 -reportprogress|300|-work|work|C:/Users/BarikBin_user/Desktop/mips/hazardDetector.v|
+R8
+Z91 nhazard@detector
+Z92 !s100 b3eYbOh15d[kmSSk20V?V2
+Z93 !s108 1525179792.314000
+Z94 !s107 C:/Users/BarikBin_user/Desktop/mips/hazardDetector.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vID_Stage
+Z95 I:0DbLU>XWjIMHB]99K`C<1
+Z96 V_<ohnBmULIObBC;]g4SC]3
+R3
+Z97 w1524580253
+Z98 8C:/Users/BarikBin_user/Desktop/mips/ID_Stage.v
+Z99 FC:/Users/BarikBin_user/Desktop/mips/ID_Stage.v
+L0 1
+R7
+r1
+31
+Z100 !s90 -reportprogress|300|-work|work|C:/Users/BarikBin_user/Desktop/mips/ID_Stage.v|
+R8
+Z101 n@i@d_@stage
+Z102 !s100 ALJA?2`9AT@djdziIaWKA3
+Z103 !s108 1524580270.273000
+Z104 !s107 C:/Users/BarikBin_user/Desktop/mips/ID_Stage.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vID_Stage_reg
+Z105 IiGg_TNj9jBR:E1RdD]`7Y3
+Z106 VdS?43P3fX?VTmaLkZU8Yj1
+R3
+Z107 w1524580784
+Z108 8C:/Users/BarikBin_user/Desktop/mips/ID_Stage_reg.v
+Z109 FC:/Users/BarikBin_user/Desktop/mips/ID_Stage_reg.v
+L0 1
+R7
+r1
+31
+Z110 !s90 -reportprogress|300|-work|work|C:/Users/BarikBin_user/Desktop/mips/ID_Stage_reg.v|
+R8
+Z111 n@i@d_@stage_reg
+Z112 !s100 T^X`e7>G?<iC^CIdEc6^D3
+Z113 !s108 1524581137.041000
+Z114 !s107 C:/Users/BarikBin_user/Desktop/mips/ID_Stage_reg.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vIF_Stage
+Z115 I;DWiZiVlPUmmLXi@4WBSh3
+Z116 VlCPd;=k_Gff5cRY;ja0T^1
+R3
+Z117 w1524573436
+Z118 8C:/Users/BarikBin_user/Desktop/mips/IF_Stage.v
+Z119 FC:/Users/BarikBin_user/Desktop/mips/IF_Stage.v
+L0 1
+R7
+r1
+31
+Z120 !s90 -reportprogress|300|-work|work|C:/Users/BarikBin_user/Desktop/mips/IF_Stage.v|
+R8
+Z121 n@i@f_@stage
+Z122 !s100 MJ;jj@@g6_5aORCz`5EoP2
+Z123 !s108 1524573544.559000
+Z124 !s107 C:/Users/BarikBin_user/Desktop/mips/IF_Stage.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vIF_Stage_reg
+Z125 IdRai:iae4OWOYmHOGH7bY3
+Z126 VLoolBSzPiYb_1PeL>1[7C2
+R3
+Z127 w1524580819
+Z128 8C:/Users/BarikBin_user/Desktop/mips/IF_Stage_reg.v
+Z129 FC:/Users/BarikBin_user/Desktop/mips/IF_Stage_reg.v
+L0 1
+R7
+r1
+31
+Z130 !s90 -reportprogress|300|-work|work|C:/Users/BarikBin_user/Desktop/mips/IF_Stage_reg.v|
+R8
+Z131 n@i@f_@stage_reg
+Z132 !s100 DzG<mh2Bl==6Me5VS<I9=1
+Z133 !s108 1524581132.562000
+Z134 !s107 C:/Users/BarikBin_user/Desktop/mips/IF_Stage_reg.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vInstruction_memory
+Z135 IQoEJYPcW3EEldbZ:]z_<43
+Z136 V=V6fUn=zWEcC3N`fg60KS1
+R3
+Z137 w1524575516
+Z138 8C:/Users/BarikBin_user/Desktop/mips/Instruction_memory.v
+Z139 FC:/Users/BarikBin_user/Desktop/mips/Instruction_memory.v
+L0 1
+R7
+r1
+31
+Z140 !s90 -reportprogress|300|-work|work|C:/Users/BarikBin_user/Desktop/mips/Instruction_memory.v|
+R8
+Z141 n@instruction_memory
+Z142 !s100 XmNNZ?6:mFP4Y0bIhHPOL0
+Z143 !s108 1524575519.899000
+Z144 !s107 C:/Users/BarikBin_user/Desktop/mips/Instruction_memory.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMEM_Stage
+Z145 I17M?A^G4>QQbk9?<Ub^h=2
+Z146 V8d_c_TPPD=9LUgO4=0B>31
+R3
+Z147 w1522758731
+Z148 8C:/Users/BarikBin_user/Desktop/mips/MEM_Stage.v
+Z149 FC:/Users/BarikBin_user/Desktop/mips/MEM_Stage.v
+L0 1
+R7
+r1
+31
+R8
+Z150 n@m@e@m_@stage
+Z151 !s100 Yd04JAd^UZaB8j7=9`4ea0
+Z152 !s108 1524571148.272000
+Z153 !s107 C:/Users/BarikBin_user/Desktop/mips/MEM_Stage.v|
+Z154 !s90 -reportprogress|300|-work|work|C:/Users/BarikBin_user/Desktop/mips/MEM_Stage.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMEM_Stage_reg
+Z155 I]VzFcmWQ0Icm9mVX1G0zj3
+Z156 VCKnIm5I=MI^4Wn??NmdF23
+R3
+Z157 w1521759619
+Z158 8C:/Users/BarikBin_user/Desktop/mips/MEM_Stage_reg.v
+Z159 FC:/Users/BarikBin_user/Desktop/mips/MEM_Stage_reg.v
+L0 1
+R7
+r1
+31
+R8
+Z160 n@m@e@m_@stage_reg
+Z161 !s100 RkKl9]aR4BSQ_OU5>R6D?1
+Z162 !s108 1524571148.494000
+Z163 !s107 C:/Users/BarikBin_user/Desktop/mips/MEM_Stage_reg.v|
+Z164 !s90 -reportprogress|300|-work|work|C:/Users/BarikBin_user/Desktop/mips/MEM_Stage_reg.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMIPS
+!i10b 1
+!s100 k=LmL3F^>hSR3eoRSGSh92
+Ii^R3^iRA:m]VFS4D2UcT=3
+Z165 V<ao9YZf[Pz=bFYO;d[ImL1
+R3
+w1525180309
+Z166 8C:/Users/BarikBin_user/Desktop/mips/MIPS.V
+Z167 FC:/Users/BarikBin_user/Desktop/mips/MIPS.V
+L0 48
+R7
+r1
+!s85 0
+31
+!s108 1525180317.017000
+!s107 C:/Users/BarikBin_user/Desktop/mips/MIPS.V|
+Z168 !s90 -reportprogress|300|-work|work|C:/Users/BarikBin_user/Desktop/mips/MIPS.V|
+!s101 -O0
+R8
+Z169 n@m@i@p@s
+vmips_tester
+Z170 I6H3YETh;?[>G_5kRaSX[Y2
+Z171 VMR:E_eak@l:KZ1>kZm^Yb0
+R3
+Z172 w1524581381
+Z173 8C:/Users/BarikBin_user/Desktop/mips/mips_tester.v
+Z174 FC:/Users/BarikBin_user/Desktop/mips/mips_tester.v
+L0 1
+R7
+r1
+31
+Z175 !s90 -reportprogress|300|-work|work|C:/Users/BarikBin_user/Desktop/mips/mips_tester.v|
+R8
+Z176 !s100 ]cXjnIl9Qbn`a0N:1f^a33
+Z177 !s108 1524581390.174000
+Z178 !s107 C:/Users/BarikBin_user/Desktop/mips/mips_tester.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmux
+Z179 I^>D90Ul2_6Hg:ETUfX7[P3
+Z180 VnRFUUhHk9A5g>AKS82hcW1
+R3
+Z181 w1521703532
+Z182 8C:/Users/BarikBin_user/Desktop/mips/mux2.v
+Z183 FC:/Users/BarikBin_user/Desktop/mips/mux2.v
+L0 1
+R7
+r1
+31
+Z184 !s108 1524571149.296000
+Z185 !s107 C:/Users/BarikBin_user/Desktop/mips/mux2.v|
+Z186 !s90 -reportprogress|300|-work|work|C:/Users/BarikBin_user/Desktop/mips/mux2.v|
+R8
+Z187 !s100 zn@En?F<MNWidXd1_KOSM1
+!i10b 1
+!s85 0
+!s101 -O0
+vmux2
+Z188 !s100 o2nXg:z]FI[IT=m>eGAA`3
+Z189 IW=;`VVAGcXfD5Q?DeHN=B0
+Z190 VlDD3ThK_7n_`7_aQ_hOB<1
+R28
+Z191 w1520330889
+Z192 8C:/Users/sadrodin1376/Desktop/mips/mux2.v
+Z193 FC:/Users/sadrodin1376/Desktop/mips/mux2.v
+L0 1
+R7
+r1
+31
+Z194 !s108 1520330893.137000
+Z195 !s107 C:/Users/sadrodin1376/Desktop/mips/mux2.v|
+Z196 !s90 -reportprogress|300|-work|work|C:/Users/sadrodin1376/Desktop/mips/mux2.v|
+R8
+!i10b 1
+!s85 0
+!s101 -O0
+vRegister_file
+Z197 II@NhO5gn3HXEOVh<Z7oX_3
+Z198 Vb_c`LN_9kdBQNMP06z29C2
+R3
+Z199 w1521865499
+Z200 8C:/Users/BarikBin_user/Desktop/mips/Register_file.v
+Z201 FC:/Users/BarikBin_user/Desktop/mips/Register_file.v
+L0 1
+R7
+r1
+31
+R8
+Z202 n@register_file
+Z203 !s100 1V]_ZiMio@Ubok?UBWeKb1
+Z204 !s108 1524571149.584000
+Z205 !s107 C:/Users/BarikBin_user/Desktop/mips/Register_file.v|
+Z206 !s90 -reportprogress|300|-work|work|C:/Users/BarikBin_user/Desktop/mips/Register_file.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vself_test
+Z207 I_XldcRz19AFS9fKn24>F>2
+Z208 Vmhh@ZP13j>O_^N<<_l>R:3
+R3
+R181
+R182
+R183
+L0 11
+R7
+r1
+31
+R184
+R185
+R186
+R8
+Z209 !s100 bRQQUz`J1ThL<LcflVCeL2
+!i10b 1
+!s85 0
+!s101 -O0
+vtest
+Z210 !s100 >R=iiTHWYh3FB=J3N605P3
+Z211 I07lR:28dn3?DH51L9ooc;3
+Z212 Vk<3<[f=78GX=_HO53D;7>3
+R28
+Z213 w1521697592
+R192
+R193
+L0 11
+R7
+r1
+31
+Z214 !s108 1521701249.255000
+R195
+R196
+R8
+!i10b 1
+!s85 0
+!s101 -O0
+vWB_Stage
+Z215 I2i>5m6[2<PUX^nPlT3MVX3
+Z216 V?V`GU_`1MeX3iRKH6d:V43
+R3
+Z217 w1521869450
+Z218 8C:/Users/BarikBin_user/Desktop/mips/WB_Stage.v
+Z219 FC:/Users/BarikBin_user/Desktop/mips/WB_Stage.v
+L0 1
+R7
+r1
+31
+R8
+Z220 n@w@b_@stage
+Z221 !s100 >Am]W^FlN0nACFC<AAOO]3
+Z222 !s108 1524571149.750000
+Z223 !s107 C:/Users/BarikBin_user/Desktop/mips/WB_Stage.v|
+Z224 !s90 -reportprogress|300|-work|work|C:/Users/BarikBin_user/Desktop/mips/WB_Stage.v|
+!i10b 1
+!s85 0
+!s101 -O0

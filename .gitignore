@@ -1,0 +1,9 @@
+*.v.bak
+*.pdf
+./work/*
+*.do
+*.mti
+*.mpf
+*.vstf
+*.wlf
+wlf*
