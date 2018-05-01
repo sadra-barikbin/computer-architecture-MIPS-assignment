@@ -15,7 +15,7 @@ reg[31:0] dataReg;
 assign mem_read_value=dataReg;
 assign {sramOE,sramCE,sramLB,sramUB}=4'd0;
 reg[2:0] state;
-assign sramWE=mem_w_en_in;
+assign sramWE=~mem_w_en_in;
 assign sramDQ=(mem_w_en_in)?((state==1 || state==2)?dataReg[15:0]:dataReg[31:16]):16'bz;
 assign sramAddr=(state==1 || state==2)?({alu_result_in[18:2],1'b0}):(state==3 || state==4)?({alu_result_in[18:2],1'b1}):0;
 
