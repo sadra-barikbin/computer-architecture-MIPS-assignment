@@ -16,51 +16,42 @@ assign mem_read_value=dataReg;
 assign {sramOE,sramCE,sramLB,sramUB}=4'd0;
 reg[2:0] state;
 assign sramWE=~mem_w_en_in;
-assign sramDQ=(mem_w_en_in)?((state==1 || state==2)?dataReg[15:0]:dataReg[31:16]):16'bz;
-assign sramAddr=(state==1 || state==2)?({alu_result_in[18:2],1'b0}):(state==3 || state==4)?({alu_result_in[18:2],1'b1}):0;
+assign sramDQ=(mem_w_en_in)?((state==0 || state==1)?dataReg[15:0]:dataReg[31:16]):16'bz;
+assign sramAddr=(state==0 || state==1)?({alu_result_in[18:2],1'b0}):(state==2 || state==3)?({alu_result_in[18:2],1'b1}):0;
 
 always@(posedge clk,posedge rst)begin
   ready<=!((mem_r_en_in || mem_w_en_in)&& (state==0))  ;
-  if(rst)
+  if(rst)begin
+    ready=1;
     state=0;
+  end
 else begin 
   state<=state+1;
   case(state )
-    1:begin
+    0:begin
       if(mem_w_en_in)
         dataReg[15:0]<=st_val[15:0];
     end
-    2:begin
+    1:begin
       if(mem_r_en_in)
         dataReg[15:0]<=sramDQ;
       end
-    3:begin
+    2:begin
       if(mem_w_en_in)
          dataReg[31:16]<=st_val[31:16];
     end 
-    4:begin
+    3:begin
       if(mem_r_en_in)
         dataReg[31:16]<=sramDQ;
+    end
+    4:begin
       ready<=1;
       state<=0;
     end
  endcase
  end     
  end
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
+endmodule
 /*reg[31:0] ram[63:0];
 integer i;
 wire[31:0] index=(alu_result_in[8:0])>>2;
@@ -76,4 +67,3 @@ assign mem_read_value=ram[index];
         ram[index] <= st_val;
     end
   end*/
-endmodule

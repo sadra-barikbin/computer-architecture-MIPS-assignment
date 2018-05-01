@@ -1,6 +1,6 @@
 *.v.bak
 *.pdf
-./work/*
+work/
 *.do
 *.mti
 *.mpf
