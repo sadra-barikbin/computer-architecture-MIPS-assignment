@@ -11,13 +11,16 @@ module ID_Stage_reg(
 	output reg [1:0] Br_type,
 	output reg [3:0] exe_cmd,
 	output reg mem_r_en, mem_w_en, wb_en,
-	output reg[4:0] src1,src2
+	output reg[4:0] src1,src2,
+	input memReady
 );
 	always@(posedge clk,posedge rst)begin
 		if(rst )
 			{dst,reg2,val2,val1,PC_out,Br_type,exe_cmd,mem_r_en,mem_w_en,wb_en,src1,src2}=0;
 		else if( flush)
 			{dst,reg2,val2,val1,PC_out,Br_type,exe_cmd,mem_r_en,mem_w_en,wb_en,src1,src2}=0;
+		else if(!memReady)
+		  {dst,reg2,val2,val1,PC_out,Br_type,exe_cmd,mem_r_en,mem_w_en,wb_en,src1,src2}<={dst,reg2,val2,val1,PC_out,Br_type,exe_cmd,mem_r_en,mem_w_en,wb_en,src1,src2};
 		else begin
 			dst<=dst_in;
 			reg2<=reg2_in;

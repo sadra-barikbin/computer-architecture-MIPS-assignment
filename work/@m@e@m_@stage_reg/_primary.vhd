@@ -13,6 +13,7 @@ entity MEM_Stage_reg is
         mem_r_en        : out    vl_logic;
         alu_result      : out    vl_logic_vector(31 downto 0);
         mem_read_value  : out    vl_logic_vector(31 downto 0);
-        dst             : out    vl_logic_vector(4 downto 0)
+        dst             : out    vl_logic_vector(4 downto 0);
+        memReady        : in     vl_logic
     );
 end MEM_Stage_reg;

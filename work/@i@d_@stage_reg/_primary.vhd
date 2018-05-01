@@ -28,6 +28,7 @@ entity ID_Stage_reg is
         mem_w_en        : out    vl_logic;
         wb_en           : out    vl_logic;
         src1            : out    vl_logic_vector(4 downto 0);
-        src2            : out    vl_logic_vector(4 downto 0)
+        src2            : out    vl_logic_vector(4 downto 0);
+        memReady        : in     vl_logic
     );
 end ID_Stage_reg;

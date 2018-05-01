@@ -4,7 +4,8 @@ module IF_Stage_reg(
 	input flush,
 	input[31:0] PC_in, Instruction_in,
 	output reg [31:0] PC, Instruction,
-	input freeze
+	input freeze,
+	input memReady
 );
 	always@(posedge clk,posedge rst)begin
 		if(rst)
@@ -12,7 +13,7 @@ module IF_Stage_reg(
 		else if(flush)
 			{PC,Instruction}=64'd0;
 		else begin
-			{Instruction, PC} <= (freeze) ? {Instruction, PC} : {Instruction_in, PC_in};
+			{Instruction, PC} <= (freeze || !memReady) ? {Instruction, PC} : {Instruction_in, PC_in};
 		end
 	end
 

@@ -5,11 +5,14 @@ module EXE_Stage_reg (
 	input [31:0] PC_in, alu_result_in, st_val_in,
 	output reg wb_en, mem_r_en, mem_w_en,
 	output reg [31:0] PC, alu_result, st_val,
-	output reg [4:0] dst
+	output reg [4:0] dst,
+	input memReady
 );
 	always@(posedge clk,posedge rst)begin
 		if(rst)
 			{wb_en,mem_r_en,mem_w_en,PC,alu_result,st_val,dst}=104'd0;
+		else if(!memReady)
+		  {wb_en,mem_r_en,mem_w_en,PC,alu_result,st_val,dst}<={wb_en,mem_r_en,mem_w_en,PC,alu_result,st_val,dst};
 		else begin
 			wb_en<=wb_en_in;
 			mem_r_en<=mem_r_en_in;

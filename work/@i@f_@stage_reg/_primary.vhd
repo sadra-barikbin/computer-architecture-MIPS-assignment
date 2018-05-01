@@ -9,6 +9,7 @@ entity IF_Stage_reg is
         Instruction_in  : in     vl_logic_vector(31 downto 0);
         PC              : out    vl_logic_vector(31 downto 0);
         Instruction     : out    vl_logic_vector(31 downto 0);
-        freeze          : in     vl_logic
+        freeze          : in     vl_logic;
+        memReady        : in     vl_logic
     );
 end IF_Stage_reg;

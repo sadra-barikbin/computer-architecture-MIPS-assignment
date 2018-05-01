@@ -17,6 +17,7 @@ entity EXE_Stage_reg is
         PC              : out    vl_logic_vector(31 downto 0);
         alu_result      : out    vl_logic_vector(31 downto 0);
         st_val          : out    vl_logic_vector(31 downto 0);
-        dst             : out    vl_logic_vector(4 downto 0)
+        dst             : out    vl_logic_vector(4 downto 0);
+        memReady        : in     vl_logic
     );
 end EXE_Stage_reg;

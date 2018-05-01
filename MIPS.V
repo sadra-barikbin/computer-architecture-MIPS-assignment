@@ -323,6 +323,7 @@ assign myClock = (SW[2]==0)?SW[1]:CLOCK_50;
 	 wire Br_taken_EXE_IFandIFReg;
 	 wire[31:0] Br_addr_EXE_IF;
 	 wire hazard_HD_IFandIFRegAndID;//-----this signal is drived from HD and is used in IF,ID,IFReg
+	 wire ready_MEM_AllOfRegs;
 
 	IF_Stage if_stage (.clk(myClock),
 								.rst(SW[0]),
@@ -330,7 +331,8 @@ assign myClock = (SW[2]==0)?SW[1]:CLOCK_50;
 								.Br_addr(Br_addr_EXE_IF),
 								.PCp4(PC_if_ifReg),
 								.instruction(inst_if_ifReg),
-								.freeze(hazard_HD_IFandIFRegAndID)
+								.freeze(hazard_HD_IFandIFRegAndID),
+								.memReady(ready_MEM_AllOfRegs)
 	);
 	//////////////////////////////////////////////////////////////////
 	
@@ -350,7 +352,8 @@ assign myClock = (SW[2]==0)?SW[1]:CLOCK_50;
 										.Instruction_in(inst_if_ifReg),
 										.Instruction(inst_IFReg_ID),
 										.PC(PC_IFReg_IDReg),
-										.freeze(hazard_HD_IFandIFRegAndID)
+										.freeze(hazard_HD_IFandIFRegAndID),
+										.memReady(ready_MEM_AllOfRegs)
 										);
 /////////////////////////////////////////////////////////////////////////
 
@@ -456,7 +459,8 @@ ID_Stage_reg  ID_EXE_stage_reg(
 	 .mem_w_en(mem_w_en_IDReg_EXEReg),
 	 .wb_en(wb_en_IDReg_EXEReg),
 	 .src1(src1_IDReg_FU),
-	 .src2(src2_IDReg_FU)
+	 .src2(src2_IDReg_FU),
+	 .memReady(ready_MEM_AllOfRegs)
 );
 ///////////////////////////////////////////////////////////////////////
 
@@ -519,7 +523,8 @@ EXE_Stage_reg exe_reg(
 	.PC(PC_EXEReg_WBReg), 
 	.alu_result(alu_result_EXEReg_MEMandMEMReg), 
 	.st_val(reg2_EXEReg_MEM),
-	.dst(dst_EXEReg_MEMReg)
+	.dst(dst_EXEReg_MEMReg),
+	.memReady(ready_MEM_AllOfRegs)
 );
 //////////////////////////////////////
 
@@ -528,6 +533,7 @@ EXE_Stage_reg exe_reg(
 //////////////////////////////  MEM Stage //////////////////////////
 //outputs:
   wire[31:0] memReadVal_MEM_MEMReg;
+  //wire ready_MEM_AllOfRegs;
 //
 
 MEM_Stage mem(
@@ -537,7 +543,15 @@ MEM_Stage mem(
 	.mem_w_en_in(mem_w_en_EXEReg_MEM),
 	.alu_result_in(alu_result_EXEReg_MEMandMEMReg), 
 	.st_val(reg2_EXEReg_MEM),
-	.mem_read_value(memReadVal_MEM_MEMReg)
+	.mem_read_value(memReadVal_MEM_MEMReg),
+	.sramDQ(SRAM_DQ),
+	.sramAddr(SRAM_ADDR),
+	.sramUB(SRAM_UB_N),
+	.sramLB(SRAM_LB_N), 
+	.sramWE(SRAM_WE_N),
+	.sramCE(SRAM_CE_N),
+	.sramOE(SRAM_OE_N),
+	.ready(ready_MEM_AllOfRegs)
 );	
 ///////////////////////////////////////////////////////////////////
 	
@@ -561,7 +575,8 @@ MEM_Stage_reg mem_reg(
 	.mem_r_en(mem_r_en_MEMReg_WB),
 	.alu_result(alu_result_MEMReg_WB), 
 	.mem_read_value(memReadValue_MEMReg_WB),
-	.dst(dst_MEMReg_WB)
+	.dst(dst_MEMReg_WB),
+	.memReady(ready_MEM_AllOfRegs)
 );
 ///////////////////////////////////////////////////////////////////////
 
@@ -639,13 +654,7 @@ WB_Stage wb(
 		.src2_valForward(src2ValForward_FU_EXE)
 	);
 //////////////////////////////////////////////////////////////////
-inout	 [15:0]	SRAM_DQ;				//	SRAM Data bus 16 Bits
-output [17:0]	SRAM_ADDR;				//	SRAM Address bus 18 Bits
-output			SRAM_UB_N;				//	SRAM High-byte Data Mask 
-output			SRAM_LB_N;				//	SRAM Low-byte Data Mask 
-output			SRAM_WE_N;				//	SRAM Write Enable
-output			SRAM_CE_N;				//	SRAM Chip Enable
-output			SRAM_OE_N;				//	SRAM Output Enable
+
 
 
 endmodule

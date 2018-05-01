@@ -4,7 +4,8 @@ module IF_Stage(
 	input Br_taken,
 	input [31:0] Br_addr,
 	output [31:0] PCp4, instruction,
-	input freeze
+	input freeze,
+	input memReady
 );
 	reg [31:0] pc;
 	wire [31:0] next_offset, next_pc, Instruction;
@@ -27,7 +28,7 @@ module IF_Stage(
 	always@(posedge clk,posedge rst) begin
 		if (rst) pc <= 0;
 		else begin
-			pc <= (freeze) ? pc : next_pc;
+			pc <= (freeze || !memReady) ? pc : next_pc;
 		end
 	end
 	

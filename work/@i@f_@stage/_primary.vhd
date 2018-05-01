@@ -8,6 +8,7 @@ entity IF_Stage is
         Br_addr         : in     vl_logic_vector(31 downto 0);
         PCp4            : out    vl_logic_vector(31 downto 0);
         instruction     : out    vl_logic_vector(31 downto 0);
-        freeze          : in     vl_logic
+        freeze          : in     vl_logic;
+        memReady        : in     vl_logic
     );
 end IF_Stage;
